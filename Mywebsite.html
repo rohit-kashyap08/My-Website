@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #4CAF50; /* Green accent color */
+        }
+
+        /* Hero Section (The top part) */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?technology,code');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            color: #4CAF50;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            background: #333;
+        }
+
+        /* Projects */
+        .project {
+            background: #2d2d2d;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            border-left: 5px solid #4CAF50;
+        }
+
+        /* Contact Button */
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="home">
+        <h1>Rohit Kashyap</h1>
+        <p>Computer Science Student | Web Developer | Tech Enthusiast</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a passionate first-year student learning the ins and outs of technology. 
+            I love solving problems with code and am currently exploring Python, HTML, and web design. 
+            When I'm not coding, I enjoy exploring new tech trends and gaming.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Problem Solving</div>
+            <div class="skill-card">Creativity</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        
+        <div class="project">
+            <h3>Tic Tac Toe Game</h3>
+            <p>A classic game built using logic and programming skills. It allows two players to play against each other in the browser.</p>
+        </div>
+
+        <div class="project">
+            <h3>Personal Website</h3>
+            <p>This portfolio website itself! Built from scratch using HTML5 and CSS3 to showcase my work.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+        <a href="mailto:just.rohiit@gmail.com" class="btn">Email Me</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohit Kashayp. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
